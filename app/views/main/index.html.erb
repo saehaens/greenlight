@@ -13,15 +13,17 @@
 # with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 %>
 
-<div class="background">
-  <div class="container pt-9 pb-8">
+<div class="background-cus" style="background:url(https://webconf02.saehaens.com/images/gl-bg.png) no-repeat 0 0;background-size:100% 100%; ">
+  <div class="container pt-9 pb-8" style="color:white ;">
     <div class="row">
       <div class="col-md-12 col-sm-12 text-center">
-        <h1 id="main-text" class="display-4 mb-4"> <%= t("landing.welcome").html_safe %></h1>
-        <p class="lead offset-lg-2 col-lg-8 col-sm-12 "><%= t("landing.about", href: link_to(t("greenlight"), "https://bigbluebutton.org/2018/07/09/greenlight-2-0/", target: "_blank", rel: "noopener")).html_safe %></p>
-        <%= link_to "https://youtu.be/Hso8yLzkqj8", target: "_blank" do %>
-          <h4><%= t("landing.video") %> <i class="far fa-play-circle ml-1"></i></h4>
-        <% end %>
+        <h1 id="main-text" class="display-4 mb-4">넷컨퍼런스</h1>
+        <p class="lead offset-lg-2 col-lg-8 col-sm-12" style="font-size:22px; ">
+	<br>
+	<br>언택트 플랫폼 넷컨퍼런스에 오신 것을 환영합니다.
+	<br>
+        <br>언택트 비즈니스의 성공을 시작하세요.
+        </p>
       </div>
 
     </div>

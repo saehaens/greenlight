@@ -329,7 +329,7 @@ describe UsersController, type: :controller do
   end
 
   describe "POST #update" do
-    it "properly updates usser attributes" do
+    it "properly updates user attributes" do
       user = create(:user)
       @request.session[:user_id] = user.id
 

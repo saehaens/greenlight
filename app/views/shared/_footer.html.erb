@@ -15,7 +15,10 @@
 
 <footer class="footer pt-3">
   <p class="text-center mb-1">
+    문의사항 : 070-7728-9552, 9557, 9566
+    <br>
     <%= t("footer.powered_by", href: link_to(t("greenlight"), "https://bigbluebutton.org/2018/07/09/greenlight-2-0/", target: "_blank", rel: "noopener")).html_safe %> <%= Greenlight::Application::VERSION %>
+    <br>This service uses BigBlueButton and is not endorsed or certified by BigBlueButton Inc. BigBlueButton and the BigBlueButton Logo are trademarks of BigBlueButton Inc.
     <% if legal_url.present? %>
       <span>
         |
@@ -32,3 +35,4 @@
 </footer>
 
 <%= render "shared/components/cookie_warning" %>
+

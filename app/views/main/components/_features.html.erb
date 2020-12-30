@@ -16,26 +16,47 @@
 
 <div class="container mt-8 mb-6 text-center">
 
-  <h2 class="mb-6"><%= t("greenlight") %> <%= t("features.title") %></h2>
+<h2 class="mb-6">주요 기능</h2>
+<div class="row feature-stamp">
+  <div class="col-lg-3 col-md-6">
+    <span class="bg-custom" OnClick ="location.href='';" style="cursor:pointer"><img src="https://webconf02.saehaens.com/images/invite.png" alt=""/></span>
+    <h4 class="mt-4">간편 초대</h4>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <div class="feature-item">
+      <span class="bg-custom" OnClick ="location.href='';" style="cursor:pointer" ><img src="https://webconf02.saehaens.com/images/small_room.png" alt=""/></span>
+      <h4 class="mt-4">소규모룸</h4>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <span class="bg-custom" OnClick ="location.href='';" style="cursor:pointer"><img src="https://webconf02.saehaens.com/images/screen_share.png" alt="" /></span>
+    <h4 class="mt-4">화면공유</h4>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <span class="bg-custom" OnClick ="location.href='';" style="cursor:pointer"><img src="https://webconf02.saehaens.com/images/multi_device.png" alt=""/></span>
+    <h4 class="mt-4">멀티 디바이스</h4>
+  </div>
+</div>
 
+  <h2 class="mt-8 mb-6">서비스 지원</h2>
   <div class="row feature-stamp">
     <div class="col-lg-3 col-md-6">
       <div class="feature-item">
-        <div class="stamp bg-primary"><i class="fas fa-chalkboard-teacher fa-2x"></i></div>
-        <h4 class="mt-4"><%= t("features.rooms") %></h4>
+        <span class="bg-custom" OnClick ="location.href='https://forms.gle/82aBY8UMPRfEKmTV9';" style="cursor:pointer" ><img src="https://webconf02.saehaens.com/images/approve.png" alt=""/></span>
+        <h4 class="mt-4">승인신청</h4>
       </div>
     </div>
     <div class="col-lg-3 col-md-6">
-      <span class="stamp bg-primary"><i class="fas fa-film fa-2x"></i></span>
-      <h4 class="mt-4"><%= t("features.recordings") %></h4>
+      <span class="bg-custom" OnClick ="location.href='';" style="cursor:pointer"><img src="https://webconf02.saehaens.com/images/user_guide.png" alt="" /></span>
+      <h4 class="mt-4">사용자 가이드</h4>
     </div>
     <div class="col-lg-3 col-md-6">
-      <span class="stamp bg-primary"><i class="fas fa-pencil-alt fa-2x"></i></span>
-      <h4 class="mt-4"><%= t("features.designs") %></h4>
+      <span class="bg-custom" OnClick ="location.href='https://open.kakao.com/o/sjT2nSMc';" style="cursor:pointer"><img src="https://webconf02.saehaens.com/images/chat_consultation.png" alt="" /></span>
+      <h4 class="mt-4">채팅 상담</h4>
     </div>
     <div class="col-lg-3 col-md-6">
-      <span class="stamp bg-primary"><i class="fas fa-door-open fa-2x"></i></span>
-      <h4 class="mt-4"><%= t("features.authentication") %></h4>
+      <span class="bg-custom" OnClick ="location.href='https://939.co.kr/';" style="cursor:pointer"><img src="https://webconf02.saehaens.com/images/remote_support.png" alt=""/></span>
+      <h4 class="mt-4">원격지원</h4>
     </div>
   </div>
 </div>
