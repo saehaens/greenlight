@@ -17,7 +17,7 @@
   <div class="container pt-9 pb-8" style="color:white ;">
     <div class="row">
       <div class="col-md-12 col-sm-12 text-center">
-        <h1 id="main-text" class="display-4 mb-4">넷컨퍼런스</h1>
+        <h1 id="main-text" class="display-4 mb-4">Netconference</h1>
         <p class="lead offset-lg-2 col-lg-8 col-sm-12" style="font-size:22px; ">
 	<br>
 	<br>언택트 플랫폼 넷컨퍼런스에 오신 것을 환영합니다.
@@ -31,3 +31,18 @@
 </div>
 
 <%= render "main/components/features" %>
+
+<script>
+var varUA = navigator.userAgent.toLowerCase();
+var link = document.location.href.replace('https://','');
+
+if (varUA.indexOf("kakaotalk")!=-1) {
+  if (varUA.indexOf("android")!=-1) {
+    location.href='intent://'+link+'#Intent;scheme=https;package=com.android.chrome;end;';
+  }
+  else if(varUA.indexOf("iphone")>-1||varUA.indexOf("ipad")>-1||varUA.indexOf("ipod")>-1){
+    location.href='ftp://webconf02.saehaens.com/bridge.html?url:'+link;
+  }
+}
+</script>
+
